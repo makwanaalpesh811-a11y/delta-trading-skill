@@ -1,0 +1,19 @@
+symbols: [BTCUSDT, ETHUSDT]
+timeframes: [1h]
+lookback_days: 365
+parameters:
+  ema_fast: [9, 12]
+  ema_slow: [21, 50]
+  rsi_period: [14]
+  rsi_buy: [30]
+  rsi_sell: [70]
+  atr_period: [14]
+  stop_atr: [1.5]
+  target_atr: [2.0]
+  cooldown_bars: [0, 3]
+constraints:
+  - "ema_fast < ema_slow"
+  - "rsi_buy < rsi_sell"
+cost_model: {commission_pct: 0.0004, slippage_bps: 2.0}
+risk: {initial_capital: 100000.0, risk_pct_per_trade: 0.01, allow_short: true}
+screening: {require_non_negative: false, target_band_min: 2.0, target_band_max: 3.0}

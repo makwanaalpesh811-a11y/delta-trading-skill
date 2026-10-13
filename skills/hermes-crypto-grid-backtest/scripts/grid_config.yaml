@@ -1,0 +1,47 @@
+# Hermes crypto-only grid config
+# Edit symbols/timeframes/parameters to taste. Every parameter list below is a
+# grid dimension -- Hermes will test the full Cartesian product (after constraints).
+
+symbols:
+  - BTCUSDT
+  - ETHUSDT
+  # add more Delta Exchange India perpetual symbols here, one CSV per symbol+timeframe
+  # under --data-dir, named exactly SYMBOL_TIMEFRAME.csv, e.g. BTCUSDT_1h.csv
+
+timeframes:
+  - 15m
+  - 1h
+  - 4h
+
+lookback_days: 365   # last 365 calendar days, or max available history if shorter
+
+parameters:
+  ema_fast:      [5, 9, 12]
+  ema_slow:      [20, 21, 50]
+  rsi_period:    [7, 14, 21]
+  rsi_buy:       [25, 30, 35]
+  rsi_sell:      [65, 70, 75]
+  atr_period:    [14]
+  stop_atr:      [1.0, 1.5, 2.0, 2.5, 3.0]
+  target_atr:    [1.5, 2.0, 2.5, 3.0, 4.0]
+  cooldown_bars: [0, 3]
+
+constraints:
+  - "ema_fast < ema_slow"
+  - "rsi_buy < rsi_sell"
+  - "target_atr > stop_atr"   # SL se bada TP hi rakhna hai, warna combo skip
+
+cost_model:
+  commission_pct: 0.0004   # 0.04% per fill (round-trip = 2x), conservative Delta-style taker default
+  slippage_bps: 2.0        # 2 bps per fill
+
+risk:
+  initial_capital: 100000.0
+  risk_pct_per_trade: 0.01   # 1% of current equity risked per trade
+  allow_short: true          # crypto perps: shorting allowed by default
+
+screening:
+  require_non_negative: true   # drop candidates with negative net profit after costs
+  target_band_min: 2.0         # preferred trades/active-day band (2-3/day)
+  target_band_max: 3.0
+  max_drawdown_pct: 0.20        # plan gate: 20% se zyada max DD wale combos gate-fail honge
