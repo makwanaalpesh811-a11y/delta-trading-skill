@@ -1,6 +1,18 @@
 ---
 name: paper-trade-simulator
+description: "Paper-Trade Simulator"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: paper-trade-simulator
 description: Use for 24/7 crypto paper-trade simulator on Termux. Trigger word 'tredalgo' or 'trading algo' = v1 setup.
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # Paper-Trade Simulator

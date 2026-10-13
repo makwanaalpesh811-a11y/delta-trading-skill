@@ -1,6 +1,18 @@
 ---
 name: delta-mcp-india-readonly
+description: "delta mcp india readonly"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: delta-mcp-india-readonly
 description: "Delta Exchange MCP setup. Read-only market data only."
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 Always-on gates: no API key saved; DELTA_MCP_MODE=trade never set; backup config; only public market-data tools.
 Preferred install: `uvx delta-exchange-mcp` — uv/uvx is the supported path on Android aarch64 Termux (verified: uvx 0.12.15 aarch64-linux-android). Confirm Python >=3.12 via pyproject.toml. If `uvx` is missing or `uvx --version` fails, diagnose (`which uvx`, `free -h`, `df -h`) and report — do not silently fall back to `pip install` for MCP deps, and never use an unsupported binary or source tarball.

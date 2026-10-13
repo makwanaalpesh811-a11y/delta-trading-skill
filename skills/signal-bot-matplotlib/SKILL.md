@@ -1,11 +1,23 @@
 ---
 name: signal-bot-matplotlib
+description: "Signal Bot (matplotlib variant)"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: signal-bot-matplotlib
 description: Use for ~/signal_bot.py — matplotlib Delta bot.
 metadata:
   hermes:
     tags: [trading, telegram, matplotlib, signal-bot, delta-india]
     category: devops
     related_skills: [tredalgo-signal-bot, paper-trade-simulator, telegram-standalone-bot]
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # Signal Bot (matplotlib variant)

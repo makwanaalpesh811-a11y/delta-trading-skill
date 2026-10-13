@@ -1,6 +1,18 @@
 ---
 name: ema200-trendline-signal
+description: "EMA200 + TrendLine Break Signal (15m, Delta MCP)"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: ema200-trendline-signal
 description: Fetch fresh Delta MCP candles and run the 15m signal script.
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # EMA200 + TrendLine Break Signal (15m, Delta MCP)

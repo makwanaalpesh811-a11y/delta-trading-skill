@@ -1,6 +1,18 @@
 ---
 name: mcp-public-market-setup
+description: "MCP Public-Market Setup (Read-Only)"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: mcp-public-market-setup
 description: "Public MCP setup with no keys and no trade mode."
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # MCP Public-Market Setup (Read-Only)

@@ -1,7 +1,18 @@
 ---
 name: forex-news
+description: "Forex Factory News"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: forex-news
 description: Use when user sends /news or /ff for Forex Factory events.
 version: 1.1.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # Forex Factory News

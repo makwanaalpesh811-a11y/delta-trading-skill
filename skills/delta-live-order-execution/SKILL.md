@@ -1,6 +1,18 @@
 ---
 name: delta-live-order-execution
+description: "Delta Live Order Execution"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: delta-live-order-execution
 description: "Place Delta v2 orders. HMAC-signed, dry-run default."
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # Delta Live Order Execution

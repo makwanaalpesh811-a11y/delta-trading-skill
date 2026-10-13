@@ -1,11 +1,23 @@
 ---
 name: tredalgo-signal-bot
+description: "TREDALGO Signal Bot"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: tredalgo-signal-bot
 description: Maintain tredalgo_signal_bot.py — Pine-style PNG chart bot.
 metadata:
   hermes:
     tags: [trading, telegram, pillow, chart, tredalgo]
     category: devops
     related_skills: [paper-trade-simulator, telegram-standalone-bot]
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # TREDALGO Signal Bot

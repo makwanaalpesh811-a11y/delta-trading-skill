@@ -1,7 +1,18 @@
 ---
 name: delta-tick-candles
+description: "Delta Tick -> M1 Candles"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: delta-tick-candles
 version: 1.0.0
 description: "Stream Delta tick CSVs to M1 candles. Phone-storage data."
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # Delta Tick -> M1 Candles

@@ -1,7 +1,18 @@
 ---
 name: strategy-backtest-verify
+description: "Strategy Backtest Verify Workflow"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: strategy-backtest-verify
 description: Use before grid/param sweep on a user-provided strategy.
 version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 
 # Strategy Backtest Verify Workflow

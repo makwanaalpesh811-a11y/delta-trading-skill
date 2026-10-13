@@ -1,6 +1,18 @@
 ---
 name: delta-market-analysis
+description: "Delta Market Analysis (multi-TF, win-prob)"
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux]
+---
+
+name: delta-market-analysis
 description: Analyze Delta India symbol with trend and win probability.
+version: 1.0.0
+author: Alpesh Makwana
+license: MIT
+platforms: [linux, macos]
 ---
 # Delta Market Analysis (multi-TF, win-prob)
 
