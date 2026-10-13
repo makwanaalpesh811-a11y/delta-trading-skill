@@ -7,14 +7,6 @@ license: MIT
 platforms: [linux]
 ---
 
-name: paper-trade-simulator
-description: Use for 24/7 crypto paper-trade simulator on Termux. Trigger word 'tredalgo' or 'trading algo' = v1 setup.
-version: 1.0.0
-author: Alpesh Makwana
-license: MIT
-platforms: [linux, macos]
----
-
 # Paper-Trade Simulator
 
 Long-running process that simulates a crypto strategy against live market data on Termux. Read-only, no orders, no credentials. Runs in a dedicated Termux Session 2 as a single-screen terminal dashboard with in-place clear+redraw every 1 second (Binance live prices + Delta 1h candles for signals); persists trade records to a CSV the user can view anywhere.

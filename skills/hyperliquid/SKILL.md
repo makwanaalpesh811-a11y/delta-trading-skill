@@ -11,17 +11,6 @@ metadata:
     related_skills: []
 ---
 
-# Hyperliquid Skill
-
-Query Hyperliquid market and account data through the public `/info` endpoint.
-Read-only — no API key, no signing, no order placement.
-
-12 commands: `dexs`, `markets`, `spots`, `candles`, `funding`, `l2`, `state`,
-`spot-balances`, `fills`, `orders`, `review`, `export`. Stdlib only
-(`urllib`, `json`, `argparse`).
-
----
-
 ## When to Use
 
 - User asks for Hyperliquid perp or spot market data, candles, funding, or L2 book
